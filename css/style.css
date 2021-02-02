@@ -1,0 +1,49 @@
+body {
+    background: rgb(62 60 60);
+}
+.ainmation {
+    padding: 10px;
+    overflow: hidden;
+}
+.block_animation {
+    height: 200px;
+    width: 200px;
+    /* border: 2px dashed rgb(0 0 0 / 100%); */
+    border: 2px dashed rgb(255 255 255);
+    margin-bottom: 20px;
+    color: #fff;
+    padding: 10px;
+}
+.red {
+    background: red;
+    transform: rotate(0.06turn);
+    transition: all 3s ease;
+
+}
+.black {
+    background: black;
+    transition: all 3s ease;
+}
+.black.active {
+    transform: translateX( calc(100vw - 255px));
+}
+.blue {
+    background: blue;
+    transform: translate(400px, 30%);
+    transition: all 3s ease;
+}
+.gold {
+    background: gold;
+    transform: scale(1, 0.5);
+    transition: all 3s ease;
+}
+.green {
+    background: green;
+    transform: skew(0deg, 175deg);
+    transition: all 3s ease;
+}
+.purple {
+    background: rgb(95, 10, 112);
+    transform: scale(0.5) translate(100%, -100%);
+    transition: all 3s ease;
+}
