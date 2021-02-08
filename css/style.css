@@ -16,9 +16,9 @@ body {
 }
 .red {
     background: red;
-    transform: rotate(0.06turn);
-    transition: all 3s ease;
-
+}
+.red {
+    animation: rotate 4s linear 0s infinite;
 }
 .black {
     background: black;
@@ -29,13 +29,17 @@ body {
 }
 .blue {
     background: blue;
-    transform: translate(400px, 30%);
-    transition: all 3s ease;
+}
+.blue {
+    animation: scale 4s linear 0s infinite;
 }
 .gold {
     background: gold;
-    transform: scale(1, 0.5);
-    transition: all 3s ease;
+    /* transform: scale(1, 0.5);
+    transition: all 3s ease; */
+}
+.gold {
+    animation: color_animation 4s linear 0s infinite;
 }
 .green {
     background: green;
@@ -46,4 +50,202 @@ body {
     background: rgb(95, 10, 112);
     transform: scale(0.5) translate(100%, -100%);
     transition: all 3s ease;
+}
+.hello {
+    animation: translating 4s linear 0s infinite;
+    background: rgb(92, 102, 101);
+    color: white;
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    width: 60px;
+}
+/* .animation_content {
+    height: 200px;
+    width: 200px;
+    background: rgb(170, 148, 148);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+} */
+.animation_content {
+    animation: scaling 10s linear 0s infinite;
+    background: goldenrod;
+    border-radius: 60px;
+    color: white;
+    height: 120px;
+    line-height: 120px;
+    margin-top: 2rem;
+    ;
+    text-align: center;
+    transition: all 100ms linear;
+    width: 120px;
+  }
+p {
+    animation: scaling-toggle 10s steps(1) 0s infinite forwards;
+    background: white;
+    color: grey;
+    /* left: 2rem; */
+    margin: 0;
+    opacity: 0;
+    padding: 0 0.5em;
+    position: absolute;
+    /* top: 2rem; */
+    right: 1;
+    z-index: 1;
+  }
+
+  p:first-child {
+    left: 0;
+    position: relative;
+    top: 0;
+  }
+
+  p:nth-child(2) {
+    animation-delay: 2s;
+  }
+
+  p:nth-child(3) {
+    animation-delay: 4s;
+  }
+
+  p:nth-child(4) {
+    animation-delay: 6s;
+  }
+
+  p:nth-child(5) {
+    animation-delay: 8s;
+  }
+
+  p strong {
+    content: "";
+    display: inline-block;
+  }
+  /* //new */
+  .zoom-animation {
+    perspective: 500px;
+  }
+
+  .zoom-animation div,
+  .zoom-animation,
+  .title {
+    background: midnightblue;
+    color: white;
+    height: 200px;
+    line-height: 200px;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    width: 200px;
+  }
+
+  .zoom-animation span {
+    animation: zooming 5s alternate infinite both;
+    background: limegreen;
+    left: 2rem;
+    opacity: 0.7;
+    position: absolute;
+    top: 2rem;
+  }
+  .Loading {
+    animation: bouncing 0.5s cubic-bezier(.1,.25,.1,1) 0s infinite alternate both;
+    background: lightslategrey;
+    border-radius: 2px;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    padding: 1em 2em 1.1em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: top;
+    margin-top: 50px;
+  }
+  @keyframes bouncing{
+    0%  { bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5);}
+    100%{ bottom: 50px; box-shadow: 0 50px 50px rgba(0,0,0,0.1);}
+  }
+
+  @keyframes zooming {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 200px);
+    }
+  }
+
+  @keyframes scaling {
+    0% {
+      transform: scale(1);
+    }
+    19% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(2);
+    }
+    39% {
+      transform: scale(2);
+    }
+    40% {
+      transform: scale(0.5);
+    }
+    59% {
+      transform: scale(0.5);
+    }
+    60% {
+      transform: scale(0);
+    }
+    79% {
+      transform: scale(0);
+    }
+    80% {
+      transform: scale(-1);
+    }
+    99% {
+      transform: scale(-1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+@keyframes scaling-toggle {
+    0% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+@keyframes translating {
+  0%  { transform: translate(0, 0);}
+  25% { transform: translate(240px, 0);}
+  50% { transform: translate(240px, 140px);}
+  75% { transform: translate(0, 140px);}
+  100%{ transform: translate(0, 0);}
+}
+@keyframes rotate {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes scale {
+    0%   { transform: scale(0); }
+    100% { transform: scale(100%); }
+}
+@keyframes color_animation {
+    0%   { background: red; }
+    50% { background: rgb(107, 79, 79); }
+    100%   { background:red; }
 }
