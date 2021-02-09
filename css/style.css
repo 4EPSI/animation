@@ -20,9 +20,16 @@ body {
 .red {
     animation: rotate 4s linear 0s infinite;
 }
+.ball_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(28, 5, 70);
+  border-radius: 50%;
+}
 .black {
     background: black;
-    transition: all 3s ease;
+    /* transition: all 3s ease; */
 }
 .black.active {
     transform: translateX( calc(100vw - 255px));
