@@ -1,5 +1,5 @@
 body {
-    background: rgb(62 60 60);
+  background: #222;
 }
 .ainmation {
     padding: 10px;
@@ -26,6 +26,57 @@ body {
   align-items: center;
   background: rgb(28, 5, 70);
   border-radius: 50%;
+  font-size: 100px;
+  color: brown;
+}
+.white {
+  background: white;
+  border: 10px dashed rgb(0 0 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 100px;
+  color: brown;
+}
+.black_ball {
+  /* background: black; */
+  border: 2px dashed rgb(255 255 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 100px;
+  color: brown;
+}
+.content_box {
+  display: flex;
+}
+.box {
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+}
+.box-1 {
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+}
+.box-2 {
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+}
+.box-3 {
+  width: 200px;
+  height: 200px;
+  background-color: #88ce02;
+  margin: 50px auto;
+}
+.box-4 {
+  width: 150px;
+  height: 150px;
+  background-color: #88ce02;
 }
 .black {
     background: black;
@@ -69,6 +120,7 @@ body {
     text-align: center;
     width: 60px;
 }
+
 /* .animation_content {
     height: 200px;
     width: 200px;
